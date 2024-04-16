@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: system-ui,'sans-serif';
+
+}
+
+body{
+    width:100%;
+    height:100%;
+    /* position:relative; */
+}
+.company-logo{
+    display:flex;
+    align-items: center;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100vw;
+    background:rgba(0,0,0,0);
+    padding:1.1rem 1.4rem;
+    height:fit-content;
+    
+}
+
+.header{
+    position:sticky;
+    top:0px;
+    z-index:10;
+    /* background-color: red; */
+
+
+}
+.login-signup-section{
+    display:flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.login-signup-section a{
+   
+    padding:10px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    margin:10px;
+
+}
+
+.login-signup-section a:nth-child(1){
+    background:white;
+}
+
+.login-signup-section a:nth-child(2){
+    background:black;
+    color:white;
+}
+
+.login-signup-section a:nth-child(2):hover{
+    background:rgba(0,0,0,0.7);
+    transition: ease-in-out;
+}
+
+.hero-section{
+    /* position:absolute;
+    top:0px;
+    left:0px; */
+    position: relative;
+    top:-100px;
+    z-index:-2;
+    width:100vw;
+    height:100vh;
+    background-image: url('../images/hero.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left:5vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.hero-tagline{
+    font-size:40px;
+    font-weight:700;
+    font-family: 'sans-serif';
+    margin-bottom:40px;
+    /* background:red; */
+    
+}
+
+.hero-input-section{
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    gap:25px;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    height:fit-content;
+    width:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background:whitesmoke;
+    padding:10px 20px;
+}
+
+input[name="address"]{
+    border: none;
+    height:40px;
+    transition: border-bottom 0.1s ease-in;
+    width:20vw;
+    background:rgba(0,0,0,0);
+   
+}
+input[name="address"]:focus{
+    outline: none;
+    border-bottom: 4px solid #add8e6; /* Set border-bottom color for focused state */
+}
+
+.hero-input-section .search-here{
+    background:black;
+    color:white;
+    font-family: sans-serif;
+    height:60px;
+    padding:10px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius:16px;
+}
+
+.deliver-now-box{
+    background:whitesmoke;
+    height:60px;
+    display:flex;
+    justify-content: space-around;
+    gap:8px;
+    align-items: center;
+    padding:0px 10px;
+    font-size:1.2rem;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+
+.small-text {
+    margin-top:15px;
+    font-weight: bold;
+    font-size:1.1rem;
+}
+
+.small-text a{
+    margin:0px 0px 0px 10px;
+    color:black;
+    
+
+}
+
+.feature-sections{
+    position:relative;
+    /* top:100vh; */
+    margin-bottom:100px;
+    display:flex;
+    width:100%;
+    justify-content:space-around ;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.feature-sections .card{
+    flex:1;
+}
+
+/* .img-container{
+
+} */
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+.link a{
+    color: black;
+    margin:5px 0px;
+}
+
+#map-container{
+    width:100%;
+    /* background:red; */
+    margin:10px 0px;
+
+}
+
+#map-container h1{
+    font-size: 2rem;
+    margin-bottom:10px;
+}
+
+#prefooter {
+    padding:40px 0px;
+    margin-left:10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* justify-items: center; */
+    align-items: start;
+    
+}
+
+#prefooter .city{
+    padding:1vw;
+    margin:10px 0px;
+    /* background:red; */
+    color:grey;
+    font: 1.4em sans-serif;
+    /* font-family:monospace; */
+    font-weight: 500;
+    text-align: left;
+}
+
+#countries-with-uber-eats{
+display:flex;
+flex-direction:column;
+padding:20px;
+
+
+}
+#countries-with-uber-eats h1{
+    margin-bottom: 20px;
+}
+
+#countries-with-uber-eats .country-container{
+    padding:40px 0px;
+    margin-left:10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* justify-items: center; */
+    align-items: start;
+}
+
+.country{
+    padding:1vw;
+    margin:10px 0px;
+    /* background:red; */
+    color:grey;
+    font: 1.4em sans-serif;
+    /* font-family:monospace; */
+    font-weight: 500;
+    text-align: left;
+}
+
+.svg-img{
+    width:200px;
+
+}
+
+.uber-eats-section{
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.uber-eats-section .playstore {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+
+}
+
+.menus{
+    padding:40px 0px;
+    margin-left:10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* justify-items: center; */
+    align-items: start;
+}
+
+.menus .linkItem{
+    padding:1vw;
+    margin:10px 0px;
+    /* background:red; */
+    color:rgb(8, 8, 8);
+    font: 1.4em sans-serif;
+    /* font-family:monospace; */
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.playstore .heading{
+    font-size:1.4rem;
+}
+
+.final-footer{
+    width:100%;
+    display:flex;
+    /* background:red; */
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+}
+
+.social-icons-container{
+    padding:20px;
+    display:flex;
+    gap:10px;
+}
+
+.copyright-container{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    
+    gap:10px;
+}
+
+.part-1{
+    display:flex;
+    gap:10px;
+    width:100%;
+    /* background:blue; */
+    justify-content: space-around;
+}
+
+@media screen and (max-width:600px) {
+    .hero-section{
+        position: relative;
+        top:-170px;
+    }
+    input[name="address"]{
+        width: 80%;
+    }
+    #prefooter {
+        padding:40px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: start;
+    }
+
+    #countries-with-uber-eats .country-container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: start;
+    }
+
+    .uber-eats-section{
+        display:flex;
+        flex-direction: column-reverse;
+    
+    }
+    .uber-eats-section .playstore{
+        gap:50px;
+    }
+
+    .part-1{
+        flex-direction: column;
+    }
+
+    
+}
